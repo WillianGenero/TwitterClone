@@ -16,3 +16,4 @@ export {
 
 export { ArrowLeft } from 'styled-icons/heroicons-solid'
 export { Chat } from 'styled-icons/heroicons-outline'
+export { RocketseatIcon as Rocketseat } from '../components/RocketseatIcon';
