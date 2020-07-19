@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from '../Button'
-import { Container, TopSide, Logo, MenuButton, HomeIcon, BellIcon, EmailIcon, FavoriteIcon, ProfileIcon } from './styles';
+import { Container, TopSide, Logo, MenuButton, HomeIcon, BellIcon, EmailIcon, FavoriteIcon, ProfileIcon, BotSide, Avatar, ProfileData, ExitIcon } from './styles';
 
 const MenuBar: React.FC = () => {
   return (
@@ -34,6 +34,17 @@ const MenuBar: React.FC = () => {
           <span>Tweetar</span>
         </Button>
       </TopSide>
+
+      <BotSide>
+        <Avatar />
+
+        <ProfileData>
+          <strong>Willian Genero</strong>
+          <span>@WillBG_</span>
+        </ProfileData>
+
+        <ExitIcon />
+      </BotSide>
     </Container>
   );
 }

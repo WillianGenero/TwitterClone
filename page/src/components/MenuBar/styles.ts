@@ -121,3 +121,58 @@ export const BellIcon = styled(Notifications)`${IconCSS}`;
 export const EmailIcon = styled(Email)`${IconCSS}`;
 export const FavoriteIcon = styled(FavoriteBorder)`${IconCSS}`;
 export const ProfileIcon = styled(Person)`${IconCSS}`;
+
+export const BotSide = styled.div`
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+`;
+
+export const Avatar = styled.div`
+  height: 39px;
+  width: 39px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: var(--gray);
+`;
+
+export const ProfileData = styled.div`
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10px;
+    font-size: 15px;
+
+    > span {
+      color: var(--gray);
+    }
+  }
+`;
+
+export const ExitIcon = styled(ExitToApp)`
+  display: none;
+
+  @media (min-width: 1280px){
+    display: inline-block;
+
+    height: 25px;
+    width: 25px;
+
+    color: var(--white);
+    margin-left: 30px;
+
+    cursor: pointer;
+
+    &:hover {
+      > path {
+        color: var(--like);
+      }
+    }
+  }
+`;
