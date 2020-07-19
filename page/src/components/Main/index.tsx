@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ProfilePage from '../ProfilePage/index';
+
 import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
 
 const Main = () => {
@@ -15,7 +17,7 @@ const Main = () => {
         </ProfileInfo>
       </Header>
 
-      {/* ProfilePage */}
+      <ProfilePage />
 
       <BottomMenu>
         <HomeIcon />
